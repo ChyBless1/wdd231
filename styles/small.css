@@ -122,21 +122,21 @@ img {
 }
 
 .course-card {
-    padding: 0.7rem;
-    text-align: center;
-    background-color: #d97706;
-    color: white;
-    border-radius: 5px;
-    font-weight: 700;
+  padding: 0.7rem;
+  text-align: center;
+  background-color: #9a3412;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
 .course-card.completed {
-    background-color: #e8e3c6;
-    color: #111827;
+  background-color: #e8e3c6;
+  color: #111827;
 }
 
 .course-card.completed::before {
-    content: "✓ ";
+  content: "✓ ";
 }
 
 
