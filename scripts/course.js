@@ -82,24 +82,23 @@ const courseList = document.querySelector("#course-list");
 const totalCredits = document.querySelector("#total-credits");
 
 function displayCourses(courseArray) {
-    courseList.innerHTML = "";
+  courseList.innerHTML = "";
 
-    courseArray.forEach(course => {
-        const courseCard = document.createElement("div");
-        courseCard.classList.add("course-card");
-if (course.completed) {
-    courseCard.classList.add("completed");
-    courseCard.textContent = `✓ ${course.subject} ${course.number}`;
-} else {
+  courseArray.forEach((course) => {
+    const courseCard = document.createElement("div");
+    courseCard.classList.add("course-card");
+
+    if (course.completed) {
+      courseCard.classList.add("completed");
+    }
+
     courseCard.textContent = `${course.subject} ${course.number}`;
-}
-        courseList.appendChild(courseCard);
-    });
+    courseList.appendChild(courseCard);
+  });
 
-    const credits = courseArray.reduce((total, course) => total + course.credits, 0);
-    totalCredits.textContent = credits;
+  const credits = courseArray.reduce((total, course) => total + course.credits, 0);
+  totalCredits.textContent = credits;
 }
-
 document.querySelector("#all").addEventListener("click", () => {
     displayCourses(courses);
 });

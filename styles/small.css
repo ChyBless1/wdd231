@@ -44,7 +44,9 @@ header span {
 #menu::before {
     content: "☰";
 }
-
+#menu.open::before {
+    content: "X";
+}
 nav {
     display: flex;
     flex-direction: column;
