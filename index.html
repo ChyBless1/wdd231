@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Home - Blessing Muokwe</title>
+
+       <meta name="description" content="WDD 231 course home page created by Blessing Muokwe. This page introduces the course work, projects, and assignments.">
+
+    <meta name="author" content="Blessing Muokwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/course.js" defer></script>
+</head>
+<body>
+      <header>
+        <span>Blessing Muokwe</span>
+        <button id="menu" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                My name is Blessing Muokwe. I am a student learning web development.
+                This page will show my course work, projects, and progress in WDD 231.
+            </p>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpeg" alt="Photo of Blessing Muokwe">
+        </section>
+
+        <section>
+             <h2>Web Certificate Courses</h2>
+
+    <div id="course-buttons">
+        <button id="all">All</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+    </div>
+
+    <p>The total credits for course listed above is <span id="total-credits"></span></p>
+
+    <div id="course-list"></div>
+        </section>
+    </main>
+
+    <footer>
+       <div class="social">
+    <a href="#">
+        <img src="images/github.svg" alt="GitHub">
+    </a>
+    <a href="#">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+    <a href="#">
+        <img src="images/twitter-x.svg" alt="twitter-x">
+    </a>
+</div>
+
+    <p>&copy; <span id="currentyear"></span> Blessing Muokwe | Angola</p>
+
+    <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
