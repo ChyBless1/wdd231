@@ -14,6 +14,12 @@
         border-top: none;
         padding: 1rem 2rem;
     }
+    nav a.active {
+  background-color: #111827;
+  color: white;
+  font-weight: bold;
+}
+    
 
     main {
         display: grid;

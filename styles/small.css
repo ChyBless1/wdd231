@@ -59,6 +59,11 @@ nav a {
     padding: 1rem;
     border-top: 1px solid #4b5563;
 }
+nav a.active {
+    background-color: #111827;
+    color: white;
+    font-weight: bold;
+}
 
 nav a:hover {
     background-color: #111827;
