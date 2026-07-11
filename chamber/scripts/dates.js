@@ -1,0 +1,1 @@
+alert("dates.js is connected");

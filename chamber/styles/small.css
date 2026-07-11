@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #011c41;
+  --secondary-color: #d9a441;
+  --accent-color: #1fa9e5;
+  --background-color: #f4f6f8;
+  --card-color: #ffffff;
+  --text-color: #222222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+#menu {
+  margin-top: 1rem;
+  padding: 0.4rem 0.7rem;
+  font-size: 1.3rem;
+}
+main {
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.view-options {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.view-options button {
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border: 1px solid var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-options button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#members {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.member-card {
+  background-color: var(--card-color);
+  border: 1px solid #d9dee8;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.member-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.member-card a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.4rem 0;
+}
+#members.list {
+  display: block;
+}
+
+#members.list .member-card {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#members.list .member-card img {
+  display: none;
+}

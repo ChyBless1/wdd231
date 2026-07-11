@@ -12,11 +12,16 @@
 <meta property="og:description" content="Explore the Maianga Chamber of Commerce business directory. Discover local businesses, services, and organizations that support the growth of Maianga, Luanda, Angola.">
 <meta property="og:image" content="https://chybless1.github.io/wdd231/chamber/images/favicon.png">
 <meta property="og:url" content="https://chybless1.github.io/wdd231/chamber/directory.html">
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
     <header>
   <div class="site-branding">
-    <img src="images/favicon.png" alt="Maianga Chamber of Commerce ">
+    <img src="images/favicon.png" alt="Maianga Chamber of Commerce " class="logo">
     <span>Maianga Chamber of Commerce</span>
   </div>
 
@@ -24,8 +29,8 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="#">Discover</a>
     <a href="directory.html">Directory</a>
+    <a href="#">Discover</a>
     <a href="#">Join</a>
   </nav>
 </header>
@@ -39,22 +44,8 @@
   </div>
 
   <section id="members" class="grid">
-    <article class="member-card">
-      <h2>Maianga Business Center</h2>
-      <p>Business services and office support in Maianga, Luanda.</p>
-      <p><strong>Address:</strong> Rua da Maianga, Luanda</p>
-      <p><strong>Phone:</strong> +244 900 000 000</p>
-      <a href="#">Visit Website</a>
-    </article>
-
-    <article class="member-card">
-      <h2>Bairro Popular Market</h2>
-      <p>Local food, household goods, and daily market services.</p>
-      <p><strong>Address:</strong> Bairro Popular, Maianga</p>
-      <p><strong>Phone:</strong> +244 911 000 000</p>
-      <a href="#">Visit Website</a>
-    </article>
-  </section>
+  
+</section>
 </main>
 
 <footer>
@@ -63,5 +54,7 @@
   <p>Chinwe Blessing Muokwe | WDD 231</p>
   <p id="lastModified"></p>
 </footer>
+<script src="scripts/directory.js"></script>
+<script src="scripts/dates.js"></script>
 </body>
 </html>

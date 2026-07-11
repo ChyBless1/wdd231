@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Bless Flask Store",
+    "address": "Bairro Popular, Maianga",
+    "phone": "+244 927 566 840",
+    "website": "https://blessflaskstore.com",
+    "email": "contact@blessflaskstore.com",
+    "image": "bless-flask.jpg",
+    "membershipLevel": 3,
+    "description": "Premium insulated food flasks and kitchenware."
+  },
+  {
+    "name": "Meco Farma",
+    "address": "Alvalade, Maianga",
+    "phone": "+244 923 445 210",
+    "website": "https://mecofarma.com",
+    "email": "info@mecofarma.com",
+    "image": "meco-farma.jpg",
+    "membershipLevel": 2,
+    "description": "Pharmacy and health care products."
+  },
+  {
+    "name": "Sunday John Comércio",
+    "address": "17 Setembro, Golf 1",
+    "phone": "+244 923 905 581",
+    "website": "https://sundayjohncomercio.com",
+    "email": "contact@sundayjohncomercio.com",
+    "image": "sunday-john-comercio.jpg",
+    "membershipLevel": 1,
+    "description": "General commerce and household supplies."
+  },
+  {
+    "name": "Hotel Trópico",
+    "address": "Alvalade, Maianga",
+    "phone": "+244 924 330 100",
+    "website": "https://hoteltropico.com",
+    "email": "reservations@hoteltropico.com",
+    "image": "hotel-tropico.jpg",
+    "membershipLevel": 3,
+    "description": "Hospitality, lodging, and conference services."
+  },
+  {
+    "name": "Cassenda Shopping",
+    "address": "Cassenda, Maianga",
+    "phone": "+244 925 740 200",
+    "website": "https://cassendashopping.com",
+    "email": "info@cassendashopping.com",
+    "image": "cassenda-shopping.jpg",
+    "membershipLevel": 2,
+    "description": "Retail shops and local shopping services."
+  },
+  {
+    "name": "Bairro Popular Multipurpose Center",
+    "address": "Bairro Popular, Maianga",
+    "phone": "+244 926 110 300",
+    "website": "https://bpmultipurpose.com",
+    "email": "events@bpmultipurpose.com",
+    "image": "bairro-popular-center.jpg",
+    "membershipLevel": 1,
+    "description": "Community events, business meetings, and training space."
+  },
+  {
+    "name": "Maianga Fresh Market",
+    "address": "Maianga, Luanda",
+    "phone": "+244 929 620 600",
+    "website": "https://maiangafreshmarket.com",
+    "email": "info@maiangafreshmarket.com",
+    "image": "maianga-fresh-market.jpg",
+    "membershipLevel": 2,
+    "description": "Fresh food, groceries, and local produce."
+  }
+]
