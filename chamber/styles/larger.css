@@ -10,12 +10,14 @@
     display: none;
   }
 
-  nav {
+ nav,
+nav.open {
     display: flex;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
-    flex-direction: row;
-  }
+    margin-top: 0;
+}
 
   nav a {
     color: white;
