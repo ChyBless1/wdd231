@@ -13,11 +13,16 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
-
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+}
 header {
   background-color: var(--primary-color);
   color: white;
@@ -122,7 +127,7 @@ h1 {
 
 .member-card h2 {
   color: var(--primary-color);
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .member-card a {
