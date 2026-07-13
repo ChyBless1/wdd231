@@ -56,10 +56,23 @@ const listButton = document.querySelector("#list-view");
 gridButton.addEventListener("click", () => {
   membersContainer.classList.add("grid");
   membersContainer.classList.remove("list");
+
+  gridButton.classList.add("active-view");
+  listButton.classList.remove("active-view");
+
+  gridButton.setAttribute("aria-pressed", "true");
+  listButton.setAttribute("aria-pressed", "false");
 });
 
 listButton.addEventListener("click", () => {
   membersContainer.classList.add("list");
   membersContainer.classList.remove("grid");
+
+  listButton.classList.add("active-view");
+  gridButton.classList.remove("active-view");
+
+  listButton.setAttribute("aria-pressed", "true");
+  gridButton.setAttribute("aria-pressed", "false");
 });
+
 getMembers();

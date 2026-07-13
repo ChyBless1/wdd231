@@ -28,10 +28,10 @@
   <button id="menu" aria-label="Open navigation menu">☰</button>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="directory.html">Directory</a>
-    <a href="#">Discover</a>
-    <a href="#">Join</a>
+   <a href="index.html">Home</a>
+<a href="directory.html" class="active" aria-current="page">Directory</a>
+<a href="#">Discover</a>
+<a href="#">Join</a>
   </nav>
 </header>
 
@@ -39,8 +39,20 @@
   <h1>Business Directory</h1>
 
   <div class="view-options">
-    <button id="grid-view">Grid</button>
-    <button id="list-view">List</button>
+    <button
+  id="grid-view"
+  class="active-view"
+  aria-pressed="true"
+>
+  Grid
+</button>
+
+<button
+  id="list-view"
+  aria-pressed="false"
+>
+  List
+</button>
   </div>
 
   <section id="members" class="grid">
