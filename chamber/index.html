@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Discover Maianga businesses, local events, weather updates, and opportunities through the Maianga Chamber of Commerce."
+  >
+
+  <meta name="author" content="Blessing Muokwe">
+
+  <title>Maianga Chamber of Commerce | Home</title>
+
+  <link
+    rel="icon"
+    href="images/favicon.png"
+    type="image/png"
+  >
+
+  <!-- Social media information -->
+  <meta
+    property="og:title"
+    content="Maianga Chamber of Commerce | Home"
+  >
+
+  <meta
+    property="og:description"
+    content="Connect with local businesses, explore events, and discover opportunities through the Maianga Chamber of Commerce."
+  >
+
+  <meta
+    property="og:image"
+    content="https://chybless1.github.io/wdd231/chamber/images/hero.jpg"
+  >
+
+  <meta
+    property="og:url"
+    content="https://chybless1.github.io/wdd231/chamber/index.html"
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <!-- Keep your existing Google Fonts link here -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript files -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img
+        src="images/favicon.png"
+        alt="Maianga Chamber of Commerce logo"
+        class="logo"
+        width="80"
+        height="80"
+      >
+
+      <span>Maianga Chamber of Commerce</span>
+    </div>
+
+    <button
+  id="menu"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+>
+  ☰
+</button>
+
+    <nav id="navigation">
+      <a
+        href="index.html"
+        class="active"
+        aria-current="page"
+      >
+        Home
+      </a>
+
+      <a href="directory.html">Directory</a>
+      <a href="#">Discover</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Maianga Chamber of Commerce</h1>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <img
+        src="images/hero.jpg"
+        alt="Business community in Maianga, Luanda"
+        width="1200"
+        height="600"
+      >
+
+      <div class="hero-content">
+        <h2>Supporting Local Business Growth</h2>
+
+        <p>
+          Connect with businesses, discover opportunities, and become part
+          of Maianga's growing commercial community.
+        </p>
+
+        <a href="join.html" class="join-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Home-page information -->
+    <section class="home-information">
+      <!-- Current events -->
+      <section class="events">
+        <h2>Current Events</h2>
+
+        <article>
+          <h3>Maianga Business Networking Event</h3>
+
+          <p>
+            Meet local entrepreneurs and business owners while discovering
+            new partnership opportunities.
+          </p>
+
+          <p>
+            <strong>Date:</strong> To be announced
+          </p>
+        </article>
+      </section>
+
+      <!-- Current weather -->
+      <section class="weather">
+        <h2>Current Weather</h2>
+
+        <div class="current-weather">
+          <img
+            id="weather-icon"
+            src="#"
+            alt=""
+            width="80"
+            height="80"
+          >
+
+          <p>
+            <span id="current-temperature">--</span>°C
+          </p>
+
+          <p id="weather-description">
+            Weather information loading...
+          </p>
+        </div>
+      </section>
+
+      <!-- Weather forecast -->
+      <section class="forecast">
+        <h2>Weather Forecast</h2>
+
+        <div id="forecast-container">
+          <p>Three-day forecast loading...</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Member spotlight cards -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+
+      <div id="spotlight-container">
+        <!-- Spotlight businesses will be added with JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Maianga Chamber of Commerce</strong></p>
+      <p>Maianga, Luanda, Angola</p>
+      <p>Email: info@maiangachamber.org</p>
+      <p>Phone: +244 900 000 000</p>
+    </div>
+
+    <div class="footer-social">
+
+    <a href="https://www.linkedin.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our LinkedIn page">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://www.facebook.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our Facebook page">
+        <img src="images/facebook.svg" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our Instagram page">
+        <img src="images/instagram.svg" alt="Instagram">
+    </a>
+
+</div>
+    <div class="footer-information">
+      <p>
+        &copy;
+        <span id="currentyear"></span>
+        Maianga Chamber of Commerce
+      </p>
+
+      <p>Chinwe Blessing Muokwe | WDD 231</p>
+
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
