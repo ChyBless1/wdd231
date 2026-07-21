@@ -14,31 +14,62 @@
 <meta property="og:url" content="https://chybless1.github.io/wdd231/chamber/directory.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/small.css">
 <link rel="stylesheet" href="styles/larger.css">
-
+<scrpt src="scripts/navigation.js"defer></scrpt>
 <script src="scripts/directory.js" defer></script>
 <script src="scripts/dates.js" defer></script>
 </head>
 
 <body>
-    <header>
-  <div class="site-branding">
-    <img src="images/favicon.png" alt="Maianga Chamber of Commerce " class="logo">
-    <span>Maianga Chamber of Commerce</span>
+   <header>
+  <div class="header-top">
+    <div class="site-branding">
+      <img
+        src="images/favicon.png"
+        alt="Maianga Chamber of Commerce logo"
+        class="logo"
+      >
+      <span>Maianga Chamber of Commerce</span>
+    </div>
+
+    <div class="header-controls">
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Switch between light and dark mode"
+      >
+        ◐
+      </button>
+
+      <button
+        id="menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
   </div>
 
-  <button id="menu" aria-label="Open navigation menu" aria-expanded="false">☰</button>
-
   <nav id="navigation">
-   <a href="index.html">Home</a>
-<a href="directory.html" class="active" aria-current="page">Directory</a>
-<a href="#">Discover</a>
-<a href="#">Join</a>
+    <a href="index.html">Home</a>
+
+    <a
+      href="directory.html"
+      class="active"
+      aria-current="page">
+      Directory
+    </a>
+
+    <a href="#">Discover</a>
+    <a href="#">Join</a>
   </nav>
 </header>
 
@@ -68,11 +99,49 @@
 </main>
 
 <footer>
-  <p>Contact us: info@maiangachamber.org | +244 900 000 000</p>
-  <p>© <span id="currentyear"></span> Maianga Chamber of Commerce</p>
-  <p>Chinwe Blessing Muokwe | WDD 231</p>
-  <p id="lastModified"></p>
-</footer>
+    <div class="footer-contact">
+      <p><strong>Maianga Chamber of Commerce</strong></p>
+      <p>Maianga, Luanda, Angola</p>
+      <p>Email: info@maiangachamber.org</p>
+      <p>Phone: +244 900 000 000</p>
+    </div>
+
+    <div class="footer-social">
+
+    <a href="https://www.linkedin.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our LinkedIn page">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://www.facebook.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our Facebook page">
+        <img src="images/facebook.svg" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our Instagram page">
+        <img src="images/instagram.svg" alt="Instagram">
+    </a>
+
+</div>
+    <div class="footer-information">
+      <p>
+        &copy;
+        <span id="currentyear"></span>
+        Maianga Chamber of Commerce
+      </p>
+
+      <p>Chinwe Blessing Muokwe | WDD 231</p>
+
+      <p id="lastModified"></p>
+    </div>
+  </footer>
 
 </body>
 </html>
