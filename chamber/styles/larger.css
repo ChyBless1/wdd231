@@ -122,4 +122,13 @@ nav a[aria-current="page"] {
   justify-self: end;
   text-align: left;
 }
+.join-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    .membership-levels {
+    margin-top: 0;
+}
 }
