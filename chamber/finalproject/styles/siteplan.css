@@ -1,0 +1,98 @@
+:root {
+        --pomegranate: #8f1d3f;
+        --coral: #e76f51;
+        --eucalyptus: #1f5a55;
+        --cream: #fff4e8;
+        --charcoal: #2b2326;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+    header,
+    footer {
+        background-color: var(--pomegranate);
+        color: var(--cream);
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    main {
+        width: min(900px, 92%);
+        margin: 0 auto;
+        padding: 1.5rem 0;
+    }
+
+    section {
+        margin-bottom: 1.5rem;
+        padding: 1.25rem;
+        border-left: 6px solid var(--coral);
+        border-radius: 10px;
+        box-shadow: 0 4px 14px rgba(43, 35, 38, 0.14);
+    }
+
+    h2 {
+        color: var(--pomegranate);
+    }
+
+    h3 {
+        color: var(--eucalyptus);
+    }
+
+    strong {
+        color: var(--pomegranate);
+    }
+
+    li::marker {
+        color: var(--eucalyptus);
+    }
+
+    .color-list {
+        padding: 0;
+        list-style: none;
+    }
+
+    .color-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .swatch {
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+        border: 2px solid var(--charcoal);
+        border-radius: 10px;
+    }
+
+    .pomegranate {
+        background-color: var(--pomegranate);
+    }
+
+    .coral {
+        background-color: var(--coral);
+    }
+
+    .eucalyptus {
+        background-color: var(--eucalyptus);
+    }
+
+    .cream {
+        background-color: var(--cream);
+    }
+
+    .charcoal {
+        background-color: var(--charcoal);
+    }
