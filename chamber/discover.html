@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Discover Maianga, Luanda, including local attractions, community information, history, and places of interest."
+    >
+
+    <meta name="author" content="Blessing Muokwe">
+
+    <title>Discover | Maianga Chamber of Commerce</title>
+
+    <link
+        rel="icon"
+        href="images/favicon.png"
+        type="image/png"
+    >
+
+    <meta
+        property="og:title"
+        content="Discover Maianga | Chamber of Commerce"
+    >
+
+    <meta
+        property="og:description"
+        content="Explore Maianga's attractions, history, community, and important places through the Maianga Chamber of Commerce."
+    >
+
+    <meta
+        property="og:image"
+        content="https://chybless1.github.io/wdd231/chamber/images/hero.jpg"
+    >
+
+    <meta
+        property="og:url"
+        content="https://chybless1.github.io/wdd231/chamber/discover.html"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+
+</head>
+<body>
+<header>
+  <div class="header-top">
+    <div class="site-branding">
+      <img
+        src="images/favicon.png"
+        alt="Maianga Chamber of Commerce logo"
+        class="logo"
+      >
+      <span>Maianga Chamber of Commerce</span>
+    </div>
+
+    <div class="header-controls">
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Switch between light and dark mode"
+      >
+        ◐
+      </button>
+
+      <button
+        id="menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+
+    <a
+      href="directory.html">Directory</a>
+
+    <a href="discover.html"
+    class="active"
+aria-current="page">Discover</a>
+
+    <a href="join.html">Join</a>
+  </nav>
+</header>
+
+<main>
+    <h1>Discover Maianga</h1>
+
+    <section class="discover-container">
+        <h2>Explore Our Community</h2>
+
+        <p>
+            Learn more about Maianga’s history, attractions, businesses,
+            community, and important places.
+        </p>
+    </section>
+
+    <aside id="visit-message" class="visit-message" aria-live="polite"></aside>
+
+    <section class="places-section">
+  <h2>Places to Explore</h2>
+
+  <div id="places-container" class="places-grid"></div>
+</section>
+
+<dialog id="place-dialog" aria-labelledby="dialog-title">
+  <div class="dialog-content">
+    <button
+      id="close-dialog"
+      class="close-dialog"
+      type="button"
+      aria-label="Close place information"
+    >
+      &times;
+    </button>
+
+    <h2 id="dialog-title"></h2>
+
+    <img
+      id="dialog-image"
+      src=""
+      alt=""
+      width="300"
+      height="200"
+    >
+
+    <address id="dialog-address"></address>
+
+    <p id="dialog-description"></p>
+
+    <p id="dialog-details"></p>
+  </div>
+</dialog>
+</main>
+
+    <footer>
+    <div class="footer-contact">
+      <p><strong>Maianga Chamber of Commerce</strong></p>
+      <p>Maianga, Luanda, Angola</p>
+      <p>Email: info@maiangachamber.org</p>
+      <p>Phone: +244 900 000 000</p>
+    </div>
+
+    <div class="footer-social">
+
+    <a href="https://www.linkedin.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our LinkedIn page">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://www.facebook.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our Facebook page">
+        <img src="images/facebook.svg" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com"
+       target="_blank"
+       rel="noopener"
+       aria-label="Visit our Instagram page">
+        <img src="images/instagram.svg" alt="Instagram">
+    </a>
+
+</div>
+    <div class="footer-information">
+      <p>
+        &copy;
+        <span id="currentyear"></span>
+        Maianga Chamber of Commerce
+      </p>
+
+      <p>Chinwe Blessing Muokwe | WDD 231</p>
+
+      <p id="lastModified"></p>
+
+      <p>
+                <a href="attributions.html">Image Attributions</a>
+            </p>
+    </div>
+  </footer>
+</body>
+</html>
