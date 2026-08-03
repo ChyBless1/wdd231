@@ -546,7 +546,7 @@ dialog::backdrop {
   line-height: 1.5;
 }
 
-.learn-more {
+.place-learn-more {
   width: 100%;
   border: none;
   border-radius: 999px;
@@ -563,7 +563,7 @@ dialog::backdrop {
     background-color 0.25s ease;
 }
 
-.learn-more:hover,
+.place-learn-more:hover,
 .learn-more:focus-visible {
   background-color: #071b46;
   color: #ffffff;
@@ -655,7 +655,7 @@ dialog::backdrop {
   margin: 0;
 }
 
-.place-card .learn-more {
+.place-card .place-learn-more {
   grid-area: card-button;
   justify-self: start;
 }

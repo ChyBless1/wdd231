@@ -36,7 +36,7 @@ function displayPlaces(placeList) {
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = "Learn More";
-    button.classList.add("learn-more");
+    button.classList.add("place-learn-more");
 
     button.addEventListener("click", () => {
   dialogTitle.textContent = place.name;

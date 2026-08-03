@@ -180,8 +180,8 @@ nav a[aria-current="page"] {
   filter: brightness(1.08);
 }
 
-.learn-more:hover,
-.learn-more:focus-visible {
+.place-learn-more:hover,
+.place-learn-more:focus-visible:focus-visible {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgb(0 0 0 / 25%);
   background-color: #efad25;
