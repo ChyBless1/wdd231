@@ -638,9 +638,6 @@ dialog::backdrop {
   grid-area: eight;
 }
 
-/* Named areas inside every card */
-
-
 /* Discover page visitor message */
 
 .visit-message {
