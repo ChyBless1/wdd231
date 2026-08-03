@@ -503,12 +503,18 @@ dialog::backdrop {
   margin-bottom: 1.5rem;
 }
 
-.places-grid {
-  display: grid;
-  gap: 1.5rem;
-}
 
 .place-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "card-title"
+    "card-image"
+    "card-address"
+    "card-description"
+    "card-button";
+  gap: 0.8rem;
+
   background-color: #ffffff;
   border: 1px solid #d9dee8;
   border-radius: 10px;
@@ -518,15 +524,18 @@ dialog::backdrop {
 }
 
 .place-card h2 {
-  margin-top: 0;
+  grid-area: card-title;
+  margin: 0;
   color: #071b46;
 }
 
 .place-card figure {
-  margin: 0 0 1rem;
+  grid-area: card-image;
+  margin: 0;
 }
 
 .place-card img {
+  grid-area: card-image;
   display: block;
   width: 300px;
   max-width: 100%;
@@ -537,13 +546,21 @@ dialog::backdrop {
 }
 
 .place-card address {
-  margin-bottom: 0.75rem;
+  grid-area: card-address;
+  margin: 0;
   font-style: normal;
   font-weight: 700;
 }
 
 .place-card p {
+  grid-area: card-description;
+  margin: 0;
   line-height: 1.5;
+}
+
+.place-card .place-learn-more {
+  grid-area: card-button;
+  justify-self: start;
 }
 
 .place-learn-more {
@@ -623,52 +640,7 @@ dialog::backdrop {
 
 /* Named areas inside every card */
 
-.place-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-areas:
-    "card-title"
-    "card-image"
-    "card-address"
-    "card-description"
-    "card-button";
-  gap: 0.8rem;
-}
 
-.place-card h2 {
-  grid-area: card-title;
-  margin: 0;
-}
-
-.place-card figure {
-  grid-area: card-image;
-  margin: 0;
-}
-
-.place-card address {
-  grid-area: card-address;
-  margin: 0;
-}
-
-.place-card p {
-  grid-area: card-description;
-  margin: 0;
-}
-
-.place-card .place-learn-more {
-  grid-area: card-button;
-  justify-self: start;
-}
-
-.place-card img {
-  display: block;
-  width: 300px;
-  max-width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-inline: auto;
-}
 /* Discover page visitor message */
 
 .visit-message {
