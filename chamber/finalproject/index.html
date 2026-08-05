@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore ELMAVID premium insulated food flasks and vacuum bottles for hot and cold use."
+    >
+    <meta name="author" content="Blessing Chinwe">
+
+    <meta property="og:title" content="ELMAVID | Made for Better Living">
+    <meta
+        property="og:description"
+        content="Premium insulated food flasks and vacuum bottles designed for healthier everyday living."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://chybless1.github.io/wdd231/chamber/finalproject/"
+    >
+
+    <title>ELMAVID | Premium Food Flasks and Vacuum Bottles</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/elmavid.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html" aria-label="ELMAVID home">
+            <span class="brand-name">ELMAVID</span>
+            <span class="brand-tagline">Made for Better Living</span>
+        </a>
+
+        <button
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            <span aria-hidden="true">&#9776;</span>
+        </button>
+
+        <nav id="primary-navigation" aria-label="Primary navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Premium insulated foodware</p>
+
+                <h1>Healthy storage. Lasting temperature.</h1>
+
+                <p>
+                    Discover carefully selected food flasks and vacuum bottles
+                    designed to keep your meals and drinks hot or cold while
+                    supporting safer, more responsible everyday living.
+                </p>
+
+                <a class="primary-button" href="products.html">
+                    Explore the Collection
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <!-- The ELMAVID hero image will be added here. -->
+            </div>
+        </section>
+
+        <section class="collections">
+            <div class="section-heading">
+                <p class="eyebrow">Shop by collection</p>
+                <h2>Designed for meals and drinks on the move</h2>
+            </div>
+
+            <div class="collection-grid">
+                <article class="collection-card">
+                    <div class="collection-image">
+                        <!-- Food flask image will be added here. -->
+                    </div>
+
+                    <h3>Food Flasks</h3>
+
+                    <p>
+                        Insulated food containers available in practical sizes
+                        for children, work, travel, and family use.
+                    </p>
+
+                    <a href="products.html?category=food-flask">
+                        Explore Food Flasks
+                    </a>
+                </article>
+
+                <article class="collection-card">
+                    <div class="collection-image">
+                        <!-- Vacuum bottle image will be added here. -->
+                    </div>
+
+                    <h3>Vacuum Bottles</h3>
+
+                    <p>
+                        Reusable insulated bottles designed to keep beverages
+                        hot or cold throughout your day.
+                    </p>
+
+                    <a href="products.html?category=vacuum-bottle">
+                        Explore Vacuum Bottles
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="section-heading">
+                <p class="eyebrow">Customer favourites</p>
+                <h2>Featured ELMAVID products</h2>
+            </div>
+
+            <div id="featured-products" class="product-grid">
+                <!-- Featured products will be generated with JavaScript. -->
+            </div>
+        </section>
+
+        <section class="brand-values">
+            <div class="section-heading">
+                <p class="eyebrow">Why choose ELMAVID?</p>
+                <h2>Quality selected with your well-being in mind</h2>
+            </div>
+
+            <div class="values-grid">
+                <article>
+                    <h3>Food-Safe Materials</h3>
+                    <p>
+                        Products selected with quality stainless-steel
+                        interiors suitable for food and drink storage.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Temperature Retention</h3>
+                    <p>
+                        Different models provide approximately eight to twelve
+                        hours of hot or cold temperature retention.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Multiple Sizes</h3>
+                    <p>
+                        Capacities ranging from compact 500 ml options to
+                        larger two-litre products for different lifestyles.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Reusable Choices</h3>
+                    <p>
+                        Durable products that help reduce dependence on
+                        disposable and unsuitable plastic containers.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div>
+                <p class="eyebrow">Made for better living</p>
+                <h2>Find the right flask for your lifestyle</h2>
+            </div>
+
+            <a class="primary-button" href="products.html">
+                Shop ELMAVID
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-brand">
+            <p class="brand-name">ELMAVID</p>
+            <p>Made for Better Living</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="attributions.html">Attributions</a>
+        </nav>
+
+        <p>
+            &copy; <span id="current-year"></span> ELMAVID.
+            All rights reserved.
+        </p>
+
+        <p>
+            <a href="#" id="video-link">Project Demonstration Video</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -96,3 +96,33 @@
     .charcoal {
         background-color: var(--charcoal);
     }
+    /* Wireframes */
+
+#wireframes {
+    text-align: center;
+}
+
+#wireframes > p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-align: left;
+}
+
+#wireframes h3 {
+    margin: 2rem 0 1rem;
+    color: var(--eucalyptus);
+    text-align: center;
+}
+
+#wireframes img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto 2.5rem;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border: 3px solid var(--eucalyptus);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(43, 35, 38, 0.12);
+}
