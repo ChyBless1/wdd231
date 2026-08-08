@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "ELMAVID Gold Food Flask",
+    "category": "food-flask",
+    "capacity": "1.7 L",
+    "color": "Gold",
+    "price": "25,000",
+    "image": "images/elmavid-food-flask-gold-1-7l.webp"
+  },
+  {
+    "id": 2,
+    "name": "ELMAVID Red Food Flask",
+    "category": "food-flask",
+    "capacity": "1.2 L",
+    "color": "Red",
+    "price": "30,000",
+    "image": "images/elmavid-food-flask-red-1-2l.webp"
+  },
+  {
+    "id": 3,
+    "name": "ELMAVID Silver Vacuum Bottle",
+    "category": "vacuum-bottle",
+    "capacity": "750 ml",
+    "color": "Silver",
+    "price": "15,000",
+    "image": "images/elmavid-vacuum-bottle-silver-750ml.webp"
+  },
+  {
+    "id": 4,
+    "name": "ELMAVID Multicolored Food Flask",
+    "category": "food-flask",
+    "capacity": "750 ml",
+    "color": "Multicolored",
+    "price": "26,000",
+    "image": "images/elmavid-food-flask-multicolored-750ml.webp"
+  },
+  {
+    "id": 5,
+    "name": "ELMAVID Gold Vacuum Bottle",
+    "category": "vacuum-bottle",
+    "capacity": "1.8 L",
+    "color": "Gold",
+    "price": "22,000",
+    "image": "images/elmavid-vacuum-bottle-gold-1-8l.webp"
+  },
+  {
+    "id": 6,
+    "name": "ELMAVID Green Food Flask",
+    "category": "food-flask",
+    "capacity": "500 ml",
+    "color": "Green",
+    "price": "15,000",
+    "image": "images/elmavid-food-flask-green-500ml.webp"
+  },
+  {
+    "id": 7,
+    "name": "ELMAVID Cream Food Flask",
+    "category": "food-flask",
+    "capacity": "750 ml",
+    "color": "Cream",
+    "price": "7,000",
+    "image": "images/elmavid-food-flask-cream-750ml.webp"
+  },
+  {
+    "id": 8,
+    "name": "ELMAVID Blue Food Flask",
+    "category": "food-flask",
+    "capacity": "1.2 L",
+    "color": "Blue",
+    "price": "30,000",
+    "image": "images/elmavid-food-flask-blue-1-2l.webp"
+  },
+  {
+    "id": 9,
+    "name": "ELMAVID Cream Food Flask",
+    "category": "food-flask",
+    "capacity": "2 L",
+    "color": "Cream",
+    "price": "28,000",
+    "image": "images/elmavid-food-flask-cream-2l.webp"
+  },
+  {
+    "id": 10,
+    "name": "ELMAVID Silver Food Flask",
+    "category": "food-flask",
+    "capacity": "1.9 L",
+    "color": "Silver",
+    "price": "18,000",
+    "image": "images/elmavid-food-flask-silver-1-9l.webp"
+  },
+  {
+    "id": 11,
+    "name": "ELMAVID Silver Food Flask Duo",
+    "category": "food-flask",
+    "capacity": "750 ml and 1 L",
+    "color": "Silver",
+    "price": "17,000",
+    "image": "images/elmavid-food-flask-silver-duo.webp"
+  },
+  {
+    "id": 12,
+    "name": "ELMAVID Silver Food Flask",
+    "category": "food-flask",
+    "capacity": "500 ml",
+    "color": "Silver",
+    "price": "13,000",
+    "image": "images/elmavid-food-flask-silver-500ml.webp"
+  },
+  {
+    "id": 13,
+    "name": "ELMAVID Blue Food Flask",
+    "category": "food-flask",
+    "capacity": "Multiple sizes",
+    "color": "Blue",
+    "price": "17,000",
+    "image": "images/elmavid-food-flask-blue.webp"
+  },
+  {
+    "id": 14,
+    "name": "ELMAVID Green Food Flask",
+    "category": "food-flask",
+    "capacity": "1.2 L",
+    "color": "Green",
+    "price": "30,000",
+    "image": "images/elmavid-food-flask-green-1-2l.webp"
+  },
+  {
+    "id": 15,
+    "name": "ELMAVID Food Flask",
+    "category": "food-flask",
+    "capacity": "1 L",
+    "color": "Green",
+    "price": "15,000",
+    "image": "images/elmavid-food-flask-1l.webp"
+  }
+]

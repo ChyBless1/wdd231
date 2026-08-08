@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Browse ELMAVID insulated food flasks and vacuum bottles in practical sizes, materials, and temperature-retention options."
+    >
+    <meta name="author" content="Blessing Chinwe">
+
+    <!-- Open Graph metadata -->
+    <meta
+        property="og:title"
+        content="ELMAVID Products | Food Flasks and Vacuum Bottles"
+    >
+    <meta
+        property="og:description"
+        content="Explore ELMAVID food flasks and vacuum bottles designed for safe and convenient everyday storage."
+    >
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://chybless1.github.io/wdd231/chamber/finalproject/products.html"
+    >
+    <meta
+        property="og:image"
+        content="https://chybless1.github.io/wdd231/chamber/finalproject/images/elmavid-favicon.png"
+    >
+
+    <title>ELMAVID Products | Food Flasks and Vacuum Bottles</title>
+
+    <link
+        rel="icon"
+        href="images/elmavid-favicon.png"
+        type="image/png"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/elmavid.css">
+</head>
+
+<body>
+    <header>
+        <a
+            class="brand"
+            href="index.html"
+            aria-label="ELMAVID home"
+        >
+            <img
+                class="brand-logo"
+                src="images/elmavid-favicon.png"
+                alt=""
+                width="64"
+                height="64"
+            >
+
+            <span class="brand-copy">
+                <span class="brand-name">ELMAVID</span>
+                <span class="brand-tagline">Made for Better Living</span>
+            </span>
+        </a>
+
+        <button
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            <span aria-hidden="true">&#9776;</span>
+        </button>
+
+        <nav
+            id="primary-navigation"
+            aria-label="Primary navigation"
+        >
+            <a href="index.html">Home</a>
+
+            <a
+                href="products.html"
+                class="active"
+                aria-current="page"
+            >
+                Products
+            </a>
+
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Products page introduction -->
+        <section class="products-intro">
+            <p class="eyebrow">The ELMAVID Collection</p>
+
+            <h1>Find the right product for your lifestyle</h1>
+
+            <p>
+                Explore insulated food flasks and vacuum bottles in
+                different capacities, materials, and temperature-retention
+                options.
+            </p>
+        </section>
+
+        <!-- Product filters and dynamically generated products -->
+        <section
+            class="products-section"
+            aria-labelledby="products-heading"
+        >
+            <div class="section-heading">
+                <p class="eyebrow">Browse the collection</p>
+                <h2 id="products-heading">ELMAVID products</h2>
+            </div>
+
+            <div class="product-controls">
+                <div class="control-group">
+                    <label for="category-filter">
+                        Filter by category
+                    </label>
+
+                    <select
+                        id="category-filter"
+                        name="category"
+                    >
+                        <option value="all">All products</option>
+                        <option value="food-flask">Food flasks</option>
+                        <option value="vacuum-bottle">
+                            Vacuum bottles
+                        </option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="product-search">
+                        Search products
+                    </label>
+
+                    <input
+                        id="product-search"
+                        name="product-search"
+                        type="search"
+                        placeholder="Search by product name"
+                    >
+                </div>
+            </div>
+
+            <p
+                id="product-status"
+                class="product-status"
+                aria-live="polite"
+            >
+                Loading products...
+            </p>
+
+            <!-- products.js will insert at least 15 product cards here -->
+            <div
+                id="product-grid"
+                class="product-grid"
+            ></div>
+            
+
+            <noscript>
+                <p>
+                    JavaScript must be enabled to display the ELMAVID
+                    product collection.
+                </p>
+            </noscript>
+        </section>
+    </main>
+
+    <!-- Accessible product-details modal -->
+    <dialog
+        id="product-dialog"
+        class="product-dialog"
+        aria-labelledby="dialog-title"
+    >
+        <button
+            id="close-dialog"
+            class="dialog-close"
+            type="button"
+            aria-label="Close product details"
+        >
+            &times;
+        </button>
+
+        <div class="dialog-layout">
+            <img
+                id="dialog-image"
+                src=""
+                alt=""
+                width="500"
+                height="500"
+            >
+
+            <div class="dialog-content">
+                <p
+                    id="dialog-category"
+                    class="eyebrow"
+                ></p>
+
+                <h2 id="dialog-title"></h2>
+
+                <p id="dialog-description"></p>
+
+                <dl class="product-details">
+                    <div>
+                        <dt>Capacity</dt>
+                        <dd id="dialog-capacity"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Material</dt>
+                        <dd id="dialog-material"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Temperature retention</dt>
+                        <dd id="dialog-retention"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Price</dt>
+                        <dd id="dialog-price"></dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </dialog>
+
+    <footer>
+        <div class="footer-brand">
+            <p class="brand-name">ELMAVID</p>
+            <p>Made for Better Living</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="attributions.html">Attributions</a>
+        </nav>
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            ELMAVID. All rights reserved.
+        </p>
+
+        <!-- Add the real public video URL before final submission. -->
+        <!--
+        <a href="YOUR-PUBLIC-VIDEO-URL">
+            Project Demonstration Video
+        </a>
+        -->
+    </footer>
+
+    <script
+        type="module"
+        src="scripts/main.js"
+    ></script>
+
+    <script
+        type="module"
+        src="scripts/products.js"
+    ></script>
+</body>
+</html>
