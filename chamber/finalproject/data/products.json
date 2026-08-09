@@ -5,6 +5,8 @@
     "category": "food-flask",
     "capacity": "1.7 L",
     "color": "Gold",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "25,000",
     "image": "images/elmavid-food-flask-gold-1-7l.webp"
   },
@@ -14,6 +16,8 @@
     "category": "food-flask",
     "capacity": "1.2 L",
     "color": "Red",
+    "material": "18/8 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "30,000",
     "image": "images/elmavid-food-flask-red-1-2l.webp"
   },
@@ -23,6 +27,8 @@
     "category": "vacuum-bottle",
     "capacity": "750 ml",
     "color": "Silver",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "15,000",
     "image": "images/elmavid-vacuum-bottle-silver-750ml.webp"
   },
@@ -32,6 +38,8 @@
     "category": "food-flask",
     "capacity": "750 ml",
     "color": "Multicolored",
+    "material": "18/8 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "26,000",
     "image": "images/elmavid-food-flask-multicolored-750ml.webp"
   },
@@ -41,6 +49,8 @@
     "category": "vacuum-bottle",
     "capacity": "1.8 L",
     "color": "Gold",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "22,000",
     "image": "images/elmavid-vacuum-bottle-gold-1-8l.webp"
   },
@@ -50,6 +60,8 @@
     "category": "food-flask",
     "capacity": "500 ml",
     "color": "Green",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "15,000",
     "image": "images/elmavid-food-flask-green-500ml.webp"
   },
@@ -59,6 +71,8 @@
     "category": "food-flask",
     "capacity": "750 ml",
     "color": "Cream",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "7,000",
     "image": "images/elmavid-food-flask-cream-750ml.webp"
   },
@@ -68,6 +82,8 @@
     "category": "food-flask",
     "capacity": "1.2 L",
     "color": "Blue",
+    "material": "18/8 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for 12 hours",
     "price": "30,000",
     "image": "images/elmavid-food-flask-blue-1-2l.webp"
   },
@@ -77,6 +93,8 @@
     "category": "food-flask",
     "capacity": "2 L",
     "color": "Cream",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "28,000",
     "image": "images/elmavid-food-flask-cream-2l.webp"
   },
@@ -86,6 +104,8 @@
     "category": "food-flask",
     "capacity": "1.9 L",
     "color": "Silver",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "18,000",
     "image": "images/elmavid-food-flask-silver-1-9l.webp"
   },
@@ -95,6 +115,8 @@
     "category": "food-flask",
     "capacity": "750 ml and 1 L",
     "color": "Silver",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "17,000",
     "image": "images/elmavid-food-flask-silver-duo.webp"
   },
@@ -104,6 +126,8 @@
     "category": "food-flask",
     "capacity": "500 ml",
     "color": "Silver",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "13,000",
     "image": "images/elmavid-food-flask-silver-500ml.webp"
   },
@@ -113,6 +137,8 @@
     "category": "food-flask",
     "capacity": "Multiple sizes",
     "color": "Blue",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "17,000",
     "image": "images/elmavid-food-flask-blue.webp"
   },
@@ -122,6 +148,8 @@
     "category": "food-flask",
     "capacity": "1.2 L",
     "color": "Green",
+    "material": "18/8 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "30,000",
     "image": "images/elmavid-food-flask-green-1-2l.webp"
   },
@@ -131,6 +159,8 @@
     "category": "food-flask",
     "capacity": "1 L",
     "color": "Green",
+    "material": "304 Stainless Steel",
+    "retention": "Designed to keep contents hot or cold for several hours",
     "price": "15,000",
     "image": "images/elmavid-food-flask-1l.webp"
   }

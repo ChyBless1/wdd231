@@ -1,3 +1,5 @@
+const dialogMaterial = document.querySelector("#dialog-material");
+const dialogRetention = document.querySelector("#dialog-retention");
 const productGrid = document.querySelector("#product-grid");
 const productStatus = document.querySelector("#product-status");
 const categoryFilter = document.querySelector("#category-filter");
@@ -88,6 +90,65 @@ function displayProducts(productList) {
         productGrid.appendChild(productCard);
     });
 }
+
+function openProductDialog(productId) {
+    const product = products.find(
+        (item) => item.id === Number(productId)
+    );
+
+    if (!product) {
+        return;
+    }
+
+    const productDialog = document.querySelector("#product-dialog");
+    const dialogImage = document.querySelector("#dialog-image");
+    const dialogCategory = document.querySelector("#dialog-category");
+    const dialogTitle = document.querySelector("#dialog-title");
+    const dialogDescription = document.querySelector("#dialog-description");
+    const dialogCapacity = document.querySelector("#dialog-capacity");
+    const dialogColor = document.querySelector("#dialog-color");
+    const dialogPrice = document.querySelector("#dialog-price");
+
+    dialogImage.src = product.image;
+    dialogImage.alt = product.name;
+
+    dialogCategory.textContent =
+        product.category === "food-flask"
+            ? "Food Flask"
+            : "Vacuum Bottle";
+
+    dialogTitle.textContent = product.name;
+
+    dialogDescription.textContent =
+       ` Explore the ${product.name} from the ELMAVID collection.`;
+
+    dialogCapacity.textContent = product.capacity;
+    dialogColor.textContent = product.color;
+    dialogMaterial.textContent = product.material;
+    dialogRetention.textContent = product.retention;
+
+    dialogPrice.textContent =
+        `AOA ${product.price.toLocaleString()}`;
+
+    productDialog.showModal();
+}
+
+productGrid.addEventListener("click", (event) => {
+    const button = event.target.closest(".product-details-button");
+
+    if (!button) {
+        return;
+    }
+
+    openProductDialog(button.dataset.id);
+});
+
+const productDialog = document.querySelector("#product-dialog");
+const closeDialog = document.querySelector("#close-dialog");
+
+closeDialog.addEventListener("click", () => {
+    productDialog.close();
+});
 
 function filterProducts() {
     const selectedCategory = categoryFilter.value;
