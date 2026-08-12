@@ -7,6 +7,12 @@ const searchInput = document.querySelector("#product-search");
 
 let products = [];
 
+const savedCategory = localStorage.getItem("elmavidCategory");
+
+if (savedCategory) {
+    categoryFilter.value = savedCategory;
+}
+
 async function getProducts() {
     try {
         const response = await fetch("data/products.json");
@@ -152,6 +158,8 @@ closeDialog.addEventListener("click", () => {
 
 function filterProducts() {
     const selectedCategory = categoryFilter.value;
+
+    localStorage.setItem("elmavidCategory", selectedCategory);
     const searchTerm = searchInput.value
         .toLowerCase()
         .trim();

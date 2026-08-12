@@ -1,6 +1,7 @@
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#primary-navigation");
 const currentYear = document.querySelector("#current-year");
+const lastModified = document.querySelector("#last-modified");
 
 if (menuButton && navigation) {
     menuButton.addEventListener("click", () => {
@@ -19,7 +20,9 @@ if (menuButton && navigation) {
 if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
 }
-
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}
 
 const featuredProductsContainer =
     document.querySelector("#featured-products");
