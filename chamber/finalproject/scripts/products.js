@@ -72,10 +72,7 @@ function displayProducts(productList) {
                     ${product.capacity}
                 </p>
 
-                <p>
-                    <strong>Color:</strong>
-                    ${product.color}
-                </p>
+                
                 <p>
     <strong>Price:</strong>
     AOA ${product.price.toLocaleString()}
